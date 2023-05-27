@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.clienet.projeto_mercado3.FinalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/corprimaria"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_launcher_check"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dp"
+            android:text="Pedido"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/ir_para_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/wallet_bright_foreground_holo_dark"
+        android:layout_marginHorizontal="20dp"
+        android:text="Ir para menu principal"
+        android:textColor="@color/corprimaria" />
+
+    <Button
+        android:id="@+id/ir_para_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/corprimaria"
+        android:layout_marginHorizontal="20dp"
+        android:text="Ir para lista de pedidos"
+        android:textColor="#fafafa"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

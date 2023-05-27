@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.clienet.projeto_mercado3.MenuActivity"
+    tools:showIn="@layout/activity_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:id="@+id/textViewVersao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V1.1" />
+        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/corprimaria">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:text="MENU DE TAREFAS"
+                android:textColor="#fafafa"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/corterciaria">
+
+            <TextView
+                android:id="@+id/buscarminhalocalizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="O Sistema Busca Localização"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:id="@+id/compararprecosusandominhalocalizacao"
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:layout_weight="50"
+                android:background="@drawable/retangulo"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_comparacao"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageButton
+                android:id="@+id/irascomprasusandominhalocalizacao"
+                android:layout_width="1dp"
+                android:layout_height="80dp"
+                android:layout_weight="50"
+                android:background="@drawable/retangulo"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_mercado"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Comparar Preços"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Lista de Mercados"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/corterciaria">
+
+            <TextView
+                android:id="@+id/escolherlocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Escolher Cidade no Mapa"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp">
+
+                <ImageButton
+                    android:id="@+id/compararprecos"
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/retangulo"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@mipmap/ic_comparacao"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+                <ImageButton
+                    android:id="@+id/irascompras"
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="50"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/retangulo"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@mipmap/ic_mercado"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="60dp"
+            android:layout_marginHorizontal="20dp">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Comparar Preços"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:text="Lista de Mercados"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

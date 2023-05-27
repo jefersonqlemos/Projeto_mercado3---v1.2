@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dip"
+    android:padding="6dip">
+
+
+    <ImageButton
+        android:id="@+id/icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView12"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:text="nome"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/valor_unitario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:text="valor_unitario"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/icon"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_remover" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/valor_unitario"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="Valor Unitario:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/icon"
+        android:layout_alignTop="@+id/subtotal"
+        android:text="Subtotal:"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="53dp"
+        android:layout_height="118dp"
+        android:layout_above="@+id/valor_unitario"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="129dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_centerVertical="true"
+        android:text="Quantidade"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/valor_unitario"
+        android:layout_below="@+id/valor_unitario"
+        android:layout_marginTop="-35dp"
+        android:text="subtotal"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/valor_unitario"
+        android:layout_alignBottom="@+id/valor_unitario"
+        android:layout_toEndOf="@+id/numberPicker"
+        android:layout_toRightOf="@+id/numberPicker"
+        android:text="R$ "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/subtotal"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignTop="@+id/subtotal"
+        android:text="R$ "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/atualizar"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/icon"
+        android:layout_marginEnd="65dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_update"
+        android:text="Atualizar"
+        android:textColor="@color/corprimaria" />
+
+
+</RelativeLayout>

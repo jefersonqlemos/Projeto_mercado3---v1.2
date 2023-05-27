@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.clienet.projeto_mercado3.CompararPrecosActivity"
+    tools:showIn="@layout/activity_comparar_precos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/corprimaria">
+
+        <TextView
+            android:id="@+id/cidade"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Cidade: Videira"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/escolhercidade"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:background="#fafafa"
+            android:shadowColor="#A8A8A8"
+            android:text="Escolher Cidade"
+            android:textColor="@color/corprimaria"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Informe o produto"
+        android:iconifiedByDefault="false"
+        android:clickable="true"
+        />
+
+    <ListView
+        android:id="@+id/list_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/corsecundaria"
+        android:dividerHeight="3.5dip"/>
+
+
+</LinearLayout>

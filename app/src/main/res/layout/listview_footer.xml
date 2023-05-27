@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corterciaria">
+
+    <TextView
+        android:id="@+id/subtotal_produtos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtotal dos produtos"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"/>
+
+    <TextView
+        android:id="@+id/preco_entrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="preco da entrega"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Total"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/finalizar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/corprimaria"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#FFFFFF"
+        android:text="CONTINUAR" />
+
+    <Button
+        android:id="@+id/continuar_comprando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/wallet_bright_foreground_holo_dark"
+        android:text="CONTINUAR COMPRANDO"
+        android:textColor="@color/corprimaria"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"/>
+
+
+</LinearLayout>
